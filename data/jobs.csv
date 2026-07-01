@@ -1,0 +1,8 @@
+job_title,description,skill_category
+Data Scientist,Develop machine learning models and analyze datasets,AI/ML
+Machine Learning Engineer,Build predictive systems using Python and ML frameworks,AI/ML
+Backend Developer,Develop REST APIs using Python and FastAPI,Backend
+Frontend Developer,Build user interfaces using React and JavaScript,Frontend
+DevOps Engineer,Manage CI CD pipelines and Docker containers,DevOps
+Cloud Engineer,Deploy applications on AWS and Azure,Cloud
+Data Analyst,Analyze business data using SQL and visualization tools,Data Analytics
