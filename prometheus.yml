@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: "skillcast"
+    static_configs:
+      - targets: ["skillcast-api:8000"]

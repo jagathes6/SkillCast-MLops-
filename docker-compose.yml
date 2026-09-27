@@ -1,0 +1,24 @@
+services:
+  skillcast-api:
+    build: .
+    container_name: skillcast-api
+    ports:
+      - "8000:8000"
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: skillcast-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    depends_on:
+      - skillcast-api
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: skillcast-grafana
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
